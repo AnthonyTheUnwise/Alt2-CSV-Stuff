@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>ALT2 - Evaluate</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <div class="navbar">
+  
+	<ul >
+		<span class=navbar-name>Anthony Arundel Frtus</span>
+        <a href="index.html">Home</a>
+        <a href="meetbrief.html">Meeting the Brief</a>
+        <a href="investigation.html">Investigation</a>
+		<a href="planning.html">Planning & Design</a>
+		<a href="create.html">Create</a>
+		<a href="evaluate.html">Evaluation</a>
+		<a href="references.html">References & Wordcount</a>
+	</ul>
+	
+    </div>
+    <div class="content">
+        <h1>Create</h1>
+		<br>
+		<h3>Day 1</h3>
+		<p class="center"> We decided on our general topic, being about covid figures in Ireland compared to the world.
+		</p> <h3>Day 2</h3> 
+		<p class="center"> On our 2nd day, we decided on our rough hypothesis idea, being
+		"Ireland managed the COVID-19 Pandemic well relative to other countries. (less deaths per capita/ less deaths per cases)"<br>
+		We also collected our database today!
+		</p> <h3>Day 3</h3> 
+		<p class="center"> Now, we started on our pseudocode and mostly finished it in the same day! <br> We decided on how we would 
+		like to present our data too, being in a plot diagram.		
+		</p> <h3>Day 4</h3> 
+		<p class="center"> We had to start actually coding today, and we begun by cleaning all of our data, which was relatively simple. <br>
+		However, we then ran into an issue with our scatterplot not working in the slightest.
+		</p> <h3>Day 5</h3> 
+		<p class="center"> To fix the issue from the prior day, we spent a while searching before I found out how to fix it.
+		</p> <h3>Day 6</h3> 
+		<p class="center"> Kacper began to work in the baseline layout for our websites to save time while I and daniel streamlined our graph, making it look readablke and presentable.
+		</p> <h3>Day 7</h3> 
+		<p class="center"> Finally, I commented and cleaned up our code while Kacper tested it, and we begun on the website (This one!!!)
+		</p> <br>
+					<h3>Test table - Datatype error handling</h3>
+		<table>
+			<tr>
+				<th>Test ID</th>
+				<th>Description</th>
+				<th><p>Test</p>
+					<p>Data</p>
+				</th>
+				<th><p>Expected</p>
+					<p>Result</p>
+				</th>
+				<th><p>Actual</p>
+					<p>Result</p>
+				</th>
+				<th><p>Passed:</p>
+					<p>Y/N</p>
+				</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Inputting our current data type into the scatterplot to generate bubbles</td>
+				<td>str.replace + inputting data</td>
+				<td>No error message given</td>
+				<td>A lot of error messages given</td>
+				<td>N</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Inputting our changed data type into the scatterplot to generate bubbles</td>
+				<td>str.replace + then changing to float + inputting data</td>
+				<td>No error message given</td>
+				<td>A lot of error messages about "," given</td>
+				<td>N</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td> Inputting a changed datatype WITH commas removes into scatterplot</td>
+				<td>str.replace + removing commas + then changing to float + inputting data</td>
+				<td>No error message given</td>
+				<td>No error message given!</td>
+				<td>Y</td>
+			</tr>
+		</table>
+		<br>
+		<h3> Problems... </h3>
+		<p class="center">
+		We did actually encounter a massive set of errors with data types never wanting to cooperate with us, causing a huge setback in progress. 
+		Luckily, this enabled us to relook at our code and reclean our data, in which we discovered we needed to convert to a float. This problem still
+		 consisted however, due to floats with commas causing labels to not appwear and sizes to bug out. Eventually, I was able to discover the problem 
+		 after a LOT of trouble, and fixed it with help from Daniel.
+		<h3> Our Algorithms </h3>
+		<p class="center">
+		We created an algorithm to help us calculate the mean and median of our code!
+		As you can see below, it first requires us to create a new variable with the total deaths, and another for total cases. 
+		It then divides it by the amount of countries in our dataset, and then we have our mean! </p>
+		<img src="Algorithm" class="image">
+    </div>
+</body>
+</html>
